@@ -1,5 +1,9 @@
 .cardTitle {
-    background-color: blue;
+    width: 300px;
+    background-color: rgb(178, 178, 206);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .user {

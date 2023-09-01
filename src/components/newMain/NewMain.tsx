@@ -1,5 +1,4 @@
 import { FC, useEffect, useState } from 'react';
-import { TData } from '../../interfaces/data';
 import Card from '../card/Card';
 import { observer } from 'mobx-react-lite';
 import todo from '../../store/todo'

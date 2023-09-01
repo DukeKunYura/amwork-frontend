@@ -13,14 +13,14 @@ const Main: FC = () => {
 
   return (
     <div className='section'>
-      {data && data.map(item =>
+      {/* {data && data.map(item =>
         <Card
           key={item.id}
           title={item.title}
           completed={item.completed}
           id={item.id}
           userId={item.userId}
-        />)}
+        />)} */}
     </div>
   );
 };

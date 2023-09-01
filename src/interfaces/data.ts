@@ -3,6 +3,12 @@ export interface IDataItem {
   title: string;
   userId: number;
   completed: boolean;
+  avatar: string;
 }
 
 export type TData = IDataItem[] | [];
+
+export interface ICheck {
+  id: number
+  completed: boolean
+}

@@ -14,9 +14,9 @@ class Todo {
         makeAutoObservable(this)
     }
 
-    // toggle() {
-    //     this.finished = !this.finished
-    // }
+    toggle(id: number) {
+        this.todos = this.todos.map(todo => todo.id === id ? { ...todo, completed: !todo.completed } : todo)
+    }
 
     getAllfromPH() {
         getData().then(res => { this.todos = res });

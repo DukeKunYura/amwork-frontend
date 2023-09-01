@@ -2,6 +2,7 @@ import { FC, useEffect, useState } from 'react';
 import { getData } from '../../api/getData';
 import { TData } from '../../interfaces/data';
 import Card from '../card/Card';
+import './Main.css';
 
 const Main: FC = () => {
   const [data, setData] = useState<TData | []>([]);
@@ -11,7 +12,7 @@ const Main: FC = () => {
   }, []);
 
   return (
-    <>
+    <div className='section'>
       {data && data.map(item =>
         <Card
           key={item.id}
@@ -20,7 +21,7 @@ const Main: FC = () => {
           id={item.id}
           userId={item.userId}
         />)}
-    </>
+    </div>
   );
 };
 

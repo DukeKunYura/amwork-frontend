@@ -2,29 +2,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 257px;
+    width: 234px;
     padding: 2px;
     padding-top: 4px;
     padding-bottom: 4px;
     margin-top: 6px;
     margin-bottom: 6px;
-    border: 5px;
     border-radius: 6px;
     background: #F4F8FF;
 
 }
 
 .card {
-    width: 253px;
-    border: 5px;
+    width: 230px;
     border-radius: 6px;
     background-color: white;
-    box-shadow: 2px 2px 2px #F4F8FF;
+    box-shadow: 2px 2px 2px #dde6f5;
 
 }
 
 .cardTitle {
-    width: 241px;
+    width: 220px;
     margin-top: -28px;
     padding-top: 6px;
     padding-inline: 6px;
@@ -46,11 +44,12 @@
     flex-direction: row;
     justify-content: space-between;
     color: #50B810;
+    font-size: 14px;
 
 }
 
 .textLine {
-    width: 241px;
+    width: 220px;
     padding-top: 6px;
     padding-inline: 6px;
     white-space: nowrap;

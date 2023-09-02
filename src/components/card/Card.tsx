@@ -15,6 +15,7 @@ const Card: FC<IDataItem> = observer(({
 }) => {
     const startDate = dayjs().format('MMM D, hh:mm A');
     const endDate = dayjs().add(280, 'hour',).format('MMM D, hh:mm A');
+    const lorem = faker.lorem.lines();
 
     return (
         <div className='cardOut'>
@@ -27,7 +28,7 @@ const Card: FC<IDataItem> = observer(({
                     <div>{startDate}</div>
                     <div>{endDate}</div>
                 </div>
-                <div className='textLine'>{faker.lorem.lines()}</div>
+                <div className='textLine'>{lorem}</div>
                 <div className='tags'>
                     <div className='entity'>Entity title</div>
                     <div className='front'>Front-end</div>

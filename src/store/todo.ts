@@ -22,6 +22,10 @@ class Todo {
         getData().then(res => { this.todos = res });
     }
 
+    get total() {
+        return this.todos.length
+    }
+
 }
 
 export default new Todo()

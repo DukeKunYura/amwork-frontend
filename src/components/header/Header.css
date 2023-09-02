@@ -15,13 +15,21 @@
 
 .buttonAdd {
     margin-right: 4px;
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
     color: white;
 }
 
 .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-color: rgb(187, 187, 187);
+    outline-style: inset;
+    outline-width: 1px;
+    border-radius: 3px;
     margin-right: 4px;
     width: 28px;
-    height: 28px;
+    height: 24px;
 }

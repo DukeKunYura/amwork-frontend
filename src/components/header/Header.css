@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    position: fixed;
+    width: 263px;
+    background-color: white;
+    height: 40px;
+    align-items: center;
+}
+
+.today {
+    margin-right: auto;
+    color: #50991f;
+    padding-left: 4px;
+}
+
+.buttonAdd {
+    margin-right: 4px;
+    width: 28px;
+    height: 28px;
+    color: white;
+}
+
+.quantity {
+    margin-right: 4px;
+    width: 28px;
+    height: 28px;
+}

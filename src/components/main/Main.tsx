@@ -1,28 +1,37 @@
 import { FC, useEffect, useState } from 'react';
-import { getData } from '../../api/getData';
-import { TData } from '../../interfaces/data';
+import Header from '../header/Header';
 import Card from '../card/Card';
-import './Main.css';
+import { observer } from 'mobx-react-lite';
+import todo from '../../store/todo'
+import { faker } from '@faker-js/faker';
+import './Main.css'
 
-const Main: FC = () => {
-  const [data, setData] = useState<TData | []>([]);
+
+const Main: FC = observer(() => {
+  const [avatar, setAvatar] = useState<string>("")
 
   useEffect(() => {
-    getData().then(res => setData(res));
+    todo.getAllfromPH();
+    setAvatar(faker.image.avatar());
+    console.log("render main")
   }, []);
 
   return (
     <div className='section'>
-      {/* {data && data.map(item =>
-        <Card
-          key={item.id}
-          title={item.title}
-          completed={item.completed}
-          id={item.id}
-          userId={item.userId}
-        />)} */}
+      <Header />
+      <div className='cards'>
+        {todo.todos.map(item =>
+          <Card
+            key={item.id}
+            title={item.title}
+            completed={item.completed}
+            id={item.id}
+            userId={item.userId}
+            avatar={avatar}
+          />)}
+      </div>
     </div>
   );
-};
+});
 
 export default Main;

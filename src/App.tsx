@@ -1,13 +1,11 @@
-import './App.css'
-import Main from './components/main/Main'
-import NewMain from './components/newMain/NewMain'
+import Main from './components/main/Main';
+import './App.css';
 
 function App() {
 
   return (
     <>
-      {/* <Main /> */}
-      <NewMain />
+      <Main />
     </>
   )
 }

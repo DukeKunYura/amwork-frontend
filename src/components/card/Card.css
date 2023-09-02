@@ -1,16 +1,98 @@
-.cardTitle {
-    width: 300px;
-    background-color: rgb(178, 178, 206);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis
+.cardOut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 257px;
+    padding: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 5px;
+    border-radius: 6px;
+    background: #F4F8FF;
+
 }
 
-.user {
-    background-color: burlywood;
+.card {
+    width: 253px;
+    border: 5px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 2px 2px 2px #F4F8FF;
+
+}
+
+.cardTitle {
+    width: 241px;
+    margin-top: -28px;
+    padding-top: 6px;
+    padding-inline: 6px;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-indent: 1.5em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+:first-letter {
+    text-transform: uppercase
+}
+
+.dateField {
+    display: flex;
+    padding: 4px;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #50B810;
+
+}
+
+.textLine {
+    width: 241px;
+    padding-top: 6px;
+    padding-inline: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #555555;
+
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.entity {
+    margin-left: 6px;
+    height: 20px;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 5px;
+    align-items: center;
+    background: #B233A6;
+}
+
+.front {
+    margin-left: 6px;
+    height: 20px;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 5px;
+    align-items: center;
+    background: #EBEEF6;
+    color: #616C82;
+
 }
 
 .avatar {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-left: auto;
+    border-radius: 15px;
 }

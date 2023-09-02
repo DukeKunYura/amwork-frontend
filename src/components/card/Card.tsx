@@ -4,7 +4,7 @@ import { faker } from '@faker-js/faker';
 import './Card.css';
 import Checker from '../checker/Checker';
 import { observer } from 'mobx-react-lite';
-import * as dayjs from 'dayjs'
+import dayjs from 'dayjs';
 
 /**
  * Компонент рендерит карточку тудушки с данными из props

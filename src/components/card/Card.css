@@ -2,27 +2,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 234px;
+    width: 257px;
     padding: 2px;
     padding-top: 4px;
     padding-bottom: 4px;
     margin-top: 6px;
     margin-bottom: 6px;
+    border: 5px;
     border-radius: 6px;
     background: #F4F8FF;
-
 }
 
 .card {
-    width: 230px;
+    width: 253px;
+    border: 5px;
     border-radius: 6px;
     background-color: white;
-    box-shadow: 2px 2px 2px #dde6f5;
+    box-shadow: 2px 2px 2px #F4F8FF;
 
 }
 
 .cardTitle {
-    width: 220px;
+    width: 241px;
     margin-top: -28px;
     padding-top: 6px;
     padding-inline: 6px;
@@ -44,12 +45,11 @@
     flex-direction: row;
     justify-content: space-between;
     color: #50B810;
-    font-size: 14px;
 
 }
 
 .textLine {
-    width: 220px;
+    width: 241px;
     padding-top: 6px;
     padding-inline: 6px;
     white-space: nowrap;
@@ -67,22 +67,26 @@
 }
 
 .entity {
+    display: flex;
     margin-left: 6px;
     height: 20px;
     font-size: 14px;
     padding: 2px;
     border-radius: 5px;
     align-items: center;
+    justify-content: center;
     background: #B233A6;
 }
 
 .front {
+    display: flex;
     margin-left: 6px;
     height: 20px;
     font-size: 14px;
     padding: 2px;
     border-radius: 5px;
     align-items: center;
+    justify-content: center;
     background: #EBEEF6;
     color: #616C82;
 

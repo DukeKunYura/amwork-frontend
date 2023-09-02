@@ -7,31 +7,35 @@ import { faker } from '@faker-js/faker';
 import './Main.css'
 
 
+/**
+ * Компонент отправляет асинхронный запрос для получения данных,
+ * полученные данные из стора todo мапит данные в карточки
+ */
 const Main: FC = observer(() => {
-  const [avatar, setAvatar] = useState<string>("")
+    const [avatar, setAvatar] = useState<string>("")
 
-  useEffect(() => {
-    todo.getAllfromPH();
-    setAvatar(faker.image.avatar());
-    console.log("render main")
-  }, []);
+    useEffect(() => {
+        todo.getAllfromPH();
+        setAvatar(faker.image.avatar());
+        console.log("render main")
+    }, []);
 
-  return (
-    <div className='section'>
-      <Header />
-      <div className='cards'>
-        {todo.todos.map(item =>
-          <Card
-            key={item.id}
-            title={item.title}
-            completed={item.completed}
-            id={item.id}
-            userId={item.userId}
-            avatar={avatar}
-          />)}
-      </div>
-    </div>
-  );
+    return (
+        <div className='section'>
+            <Header />
+            <div className='cards'>
+                {todo.todos.map(item =>
+                    <Card
+                        key={item.id}
+                        title={item.title}
+                        completed={item.completed}
+                        id={item.id}
+                        userId={item.userId}
+                        avatar={avatar}
+                    />)}
+            </div>
+        </div>
+    );
 });
 
 export default Main;

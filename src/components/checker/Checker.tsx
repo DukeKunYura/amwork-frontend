@@ -4,15 +4,21 @@ import todo from '../../store/todo';
 import { observer } from 'mobx-react-lite';
 import './Checker.css'
 
+/**
+ * Компонент рендерит чекбокс, чекер использует экшен mobx
+ */
 const Checker: FC<ICheck> = observer(({
     completed,
     id,
 }) => {
 
     return (
-        <>
-            <input className='checker' type='checkbox' checked={completed} onChange={() => { todo.toggle(id) }}></input>
-        </>
+        <input
+            className='checker'
+            type='checkbox'
+            checked={completed}
+            onChange={() => { todo.toggle(id) }}>
+        </input>
     );
 });
 

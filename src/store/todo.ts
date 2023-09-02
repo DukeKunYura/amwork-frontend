@@ -1,4 +1,4 @@
-import { makeAutoObservable, observable, action } from "mobx"
+import { makeAutoObservable } from "mobx"
 import { getData } from "../api/getData";
 import { TData } from "../interfaces/data";
 import { configure } from "mobx"
@@ -7,6 +7,9 @@ configure({
     enforceActions: "never",
 })
 
+/**
+ * Стор для данных о todo типа IData
+ */
 class Todo {
     todos: TData = []
 
@@ -20,10 +23,6 @@ class Todo {
 
     getAllfromPH() {
         getData().then(res => { this.todos = res });
-    }
-
-    get total() {
-        return this.todos.length
     }
 
 }

@@ -6,6 +6,9 @@ import Checker from '../checker/Checker';
 import { observer } from 'mobx-react-lite';
 import * as dayjs from 'dayjs'
 
+/**
+ * Компонент рендерит карточку тудушки с данными из props
+ */
 const Card: FC<IDataItem> = observer(({
     title,
     completed,
@@ -33,9 +36,7 @@ const Card: FC<IDataItem> = observer(({
                     <div className='entity'>Entity title</div>
                     <div className='front'>Front-end</div>
                     <img className='avatar' src={avatar}></img>
-
                 </div>
-
             </div>
         </div>
 

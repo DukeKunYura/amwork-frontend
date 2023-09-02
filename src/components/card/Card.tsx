@@ -13,7 +13,6 @@ const Card: FC<IDataItem> = observer(({
     title,
     completed,
     id,
-    userId,
     avatar,
 }) => {
     const startDate = dayjs().format('MMM D, hh:mm A');

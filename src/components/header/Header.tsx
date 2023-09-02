@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import { observer } from 'mobx-react-lite';
 import todo from '../../store/todo'
 import './Header.css'
